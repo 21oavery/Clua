@@ -22,7 +22,7 @@ local fastDecTest = {
     ["9"] = 9
 }
 
-local fastOctTest = {
+local fastHexTest = {
     ["0"] = 0,
     ["1"] = 1,
     ["2"] = 2,
@@ -67,6 +67,10 @@ local function pullStringLiteralPos(str, start)
                 end
                 c = string.sub(str, i, i)
                 if c == "x" then
+                    repeat
+                        c = 
+                    until not fastHexCheck[c]
+                elseif fastOctCheck[c] and
                 i = i + 2
             elseif c == "\"" then
                 return start, i
